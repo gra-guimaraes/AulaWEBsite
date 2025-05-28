@@ -1,0 +1,81 @@
+/*
+cores
+#F27B50
+#730202
+#8C6849
+#3B8C7D
+
+font-family: 'Caveat' , cursive;
+font-family: 'EB Garamond' , serif;
+font-family: 'Marhey' , cursive;
+font-family: 'Roboto' , sans-serif;
+
+*/
+
+/*___________________*/
+/* ELEMENTOS DO HEADER */
+/*___________________*/
+
+@media screen  and (max-width: 120px) {
+  header{
+    background: linear-gradient( rgba(255, 99, 71, 0.6), rgb(0,0,0,0.2)) ,url('../mulher-de-alto-angulo-lendo-taro.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+}
+@media screen  and (max-width: 600px) {
+    header{
+      background: linear-gradient( rgba(255, 99, 71, 0.6), rgb(0,0,0,0.2)) ,url('../fundo-de-cartas-de-taro-desenhado-a-mao.zip;');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+}
+/*---navebar---*/
+@media screen and (max-width: 1110px) {
+   header nav#nav-esquerda ul.menu-principal li a{
+    font-size: 90%;
+   }
+} 
+
+@media screen and (max-width: 970px) {
+  header nav#nav-esquerda div#logo{
+    margin-left: 1rem;
+
+  }
+  /*---Menu Hamburguer---*/
+  header nav#nav-esquerda{
+    justify-content: space-between;
+  }
+  header nav#nav-esquerda ul#icone-menu{
+    display: flex;
+  }
+  header nav#nav-esquerda ul#icone-menu li#menux{
+    display: none;
+  }
+  /*---Menu---*/
+  header nav#nav-esquerda ul.menu-principal{
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background: linear-gradient(rgb69,133,140) 0%, rgb(#F27B50) 45%, rgba(255, 99, 71, 0.6 100%);
+    padding-top: .5rem;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    z-index: 999;
+
+    display: none;
+  }
+  header nav#nav-esquerda ul.menu-principal li{
+    margin: .5rem;
+  }
+  header nav#nav-esquerda ul.menu-principal li a{
+    font-size: 120%;
+  }
+}
+
+
